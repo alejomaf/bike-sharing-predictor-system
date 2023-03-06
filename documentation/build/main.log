@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  5 MAR 2023 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  6 MAR 2023 11:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -432,87 +432,144 @@ Package babel Info: Making > an active character on input line 722.
 )) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count303
+\multirow@dima=\skip65
+\bigstrutjot=\dimen259
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/markdown\markdown.sty (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/markdown\markdown.tex
+\markdownOptionFrozenCacheCounter=\count304
+\markdownInputFileStream=\read4
+\markdownOutputFileStream=\write3
+Package markdown Info: Using mode 3: The lt3luabridge package on input line 2494.
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/lt3luabridge\lt3luabridge.tex
+\g_luabridge_method_int=\count305
+
+Package luabridge Info: Using shell escape as the bridging method
+
+))
+Package: markdown 2023-02-01 v2.20.0-0-gf64ade1 markdown renderer
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/paralist\paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip66
+\plpartopsep=\skip67
+\plitemsep=\skip68
+\plparsep=\skip69
+\pl@lab=\toks33
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple.sty
+Package: csvsimple 2022/09/20 v2.3.2 LaTeX CSV file processing
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/csvsimple\csvsimple-legacy.sty
+Package: csvsimple-legacy 2022/09/20 version 2.3.2 LaTeX2e CSV file processing
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box57
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\csv@file=\read5
+\c@csvinputline=\count306
+\c@csvrow=\count307
+\c@csvcol=\count308
+\csv@out=\write4
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
+\FV@CodeLineNo=\count309
+\FV@InFile=\read6
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count310
+\FV@StepNumber=\count311
+\FV@OutFile=\write5
+) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+\markdownLaTeXCitationsCounter=\count312
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/gobble\gobble.sty
+Package: gobble 2019/01/04 v0.2 Provides more gobble macros
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/gobble\gobble.tex)) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\markdownLaTeXRowCounter=\count313
+\markdownLaTeXRowTotal=\count314
+\markdownLaTeXColumnCounter=\count315
+\markdownLaTeXColumnTotal=\count316
+\markdownLaTeXTable=\toks38
+\markdownLaTeXTableAlignment=\toks39
+\markdownLaTeXTableEnd=\toks40
 ) (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 21.
  (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/libertinust1math\ls1libertinust1math.fd
 File: ls1libertinust1math.fd 2016/03/23 Fontinst v1.933 font definitions for LS1/libertinust1math.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 17.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 21.
  (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/libertinust1math\ls2libertinust1mathsym.fd
 File: ls2libertinust1mathsym.fd 2015/04/17 v1.1.2-latex LibertinusT1Mathsym LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 17.
+(Font)              scaled to size 9.0pt on input line 21.
  (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen259
-\scratchbox=\box57
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen260
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count317
+\scratchdimen=\dimen262
+\scratchbox=\box59
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen263
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks42
 ) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Command `\dddot' is already robust on input line 17.
-LaTeX Info: Command `\ddddot' is already robust on input line 17.
+LaTeX Info: Command `\dddot' is already robust on input line 21.
+LaTeX Info: Command `\ddddot' is already robust on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@mv@tabular=\count309
-\c@mv@boldtabular=\count310
+\c@mv@tabular=\count323
+\c@mv@boldtabular=\count324
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -550,48 +607,94 @@ Package caption Info: End \AtBeginDocument code.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 17.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
-LaTeX Font Info:    Trying to load font information for T1+libertine on input line 19.
-LaTeX Font Info:    No file T1libertine.fd. on input line 19.
+(lastpage)             ! on input line 21.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+LaTeX Font Info:    Trying to load font information for T1+libertine on input line 23.
+LaTeX Font Info:    No file T1libertine.fd. on input line 23.
 
 LaTeX Font Warning: Font shape `T1/libertine/b/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 19.
+(Font)              using `T1/cmr/m/n' instead on input line 23.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 19.
+(Font)              size <20.74> substituted on input line 23.
 
 
 LaTeX Font Warning: Font shape `T1/libertine/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 19.
+(Font)              using `T1/cmr/m/n' instead on input line 23.
 
 
 LaTeX Font Warning: Font shape `T1/libertine/m/sc' undefined
-(Font)              using `T1/libertine/m/n' instead on input line 21.
+(Font)              using `T1/libertine/m/n' instead on input line 25.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 33.
+(Font)              scaled to size 9.0pt on input line 37.
 <logo_gips_unit.png, id=1, 853.5087pt x 85.2786pt>
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 62.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 66.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 62.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 66.
 (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxbiolinumt-tlf.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 62.
+(Font)              scaled to size 9.0pt on input line 66.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 62.
+(Font)              scaled to size 9.0pt on input line 66.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 62.
+(Font)              scaled to size 12.0pt on input line 66.
  [1{C:/Users/alejo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
- <./logo_gips_unit.png>] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.bbl
+ <./logo_gips_unit.png>]
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-TLF on input line 69.
+ (C:\Users\alejo\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibertinemonot-tlf.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <9> not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 69.
+
+Underfull \hbox (badness 1019) in paragraph at lines 84--85
+[]\T1/LinuxLibertineT-TLF/m/n/9 La ta-bla mues-tra la co-rre-la-ción en-tre la va-ria-ble de-pen-dien-te
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 86.
+<charts/histograms.png, id=14, 903.375pt x 898.3161pt>
+File: charts/histograms.png Graphic file (type png)
+<use charts/histograms.png>
+Package pdftex.def Info: charts/histograms.png  used on input line 96.
+(pdftex.def)             Requested size: 205.24384pt x 204.08623pt.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 97.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<charts/line-charts.png, id=15, 903.375pt x 898.3161pt>
+File: charts/line-charts.png Graphic file (type png)
+<use charts/line-charts.png>
+Package pdftex.def Info: charts/line-charts.png  used on input line 103.
+(pdftex.def)             Requested size: 205.24384pt x 204.08623pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<charts/correlational-matrix.png, id=16, 614.295pt x 581.7735pt>
+File: charts/correlational-matrix.png Graphic file (type png)
+<use charts/correlational-matrix.png>
+Package pdftex.def Info: charts/correlational-matrix.png  used on input line 110.
+(pdftex.def)             Requested size: 205.24384pt x 194.3738pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: logo_gips_unit.png Graphic file (type png)
+<use logo_gips_unit.png>
+Package pdftex.def Info: logo_gips_unit.png  used on input line 140.
+(pdftex.def)             Requested size: 216.81pt x 21.6618pt.
+[2 <./charts/histograms.png>] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
@@ -599,11 +702,9 @@ LaTeX Warning: Empty `thebibliography' environment on input line 24.
 AED: lastpage setting LastPage
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 95.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 164.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-[2
-
-] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.aux
+[3 <./charts/line-charts.png> <./charts/correlational-matrix.png>] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -616,17 +717,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11231 strings out of 476339
- 191438 string characters out of 5788120
- 1873340 words of memory out of 5000000
- 31466 multiletter control sequences out of 15000+600000
- 546080 words of font info for 46 fonts, out of 8000000 for 9000
+ 14260 strings out of 476339
+ 288968 string characters out of 5788120
+ 1875340 words of memory out of 5000000
+ 34432 multiletter control sequences out of 15000+600000
+ 557233 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,15n,91p,785b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}<C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb>
-Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (2 pages, 295653 bytes).
+ 87i,16n,91p,915b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineMT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb>
+Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (3 pages, 739382 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

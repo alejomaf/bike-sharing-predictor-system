@@ -37,15 +37,16 @@
 \RequirePackage{libertinust1math}
 \RequirePackage[T1]{fontenc}
 
+
 %%----------------------------------------------------------
 %% margins
 %%----------------------------------------------------------
 \RequirePackage[left=.7in,%
-                right=.7in,%
-                top=1.5in,%
-                bottom=.7in,%
-                headheight=1in,
-                letterpaper]{geometry}%
+    right=.7in,%
+    top=1.5in,%
+    bottom=.7in,%
+    headheight=1in,
+    letterpaper]{geometry}%
 
 %%----------------------------------------------------------
 %% main color
@@ -60,20 +61,20 @@
         \fontsize{20}{24}\fontfamily{libertine}\fontseries{b}% title font
         \fontshape{n}\selectfont\normalcolor
         \@title
-        
+
         \vspace{9pt}
-        
+
         \fontsize{9}{10}\fontseries{m}% author font
         \fontshape{n}\selectfont\color{black}
         \@author
-        
+
         \vspace{9pt}
-        
+
         \fontshape{n}\selectfont% date font
         \@date
-        
+
         \vspace{9pt}
-        ]%
+    ]%
 }
 
 \renewcommand{\section}{% section headings format
@@ -146,7 +147,7 @@
 %% figure and table captions
 %%----------------------------------------------------------
 \RequirePackage[font={sf,footnotesize,color=wsdgrey},%
-                labelsep=period,%
-                justification=raggedright]{caption}
+    labelsep=period,%
+    justification=raggedright]{caption}
 \setlength{\abovecaptionskip}{8pt}
 \setlength{\belowcaptionskip}{8pt}

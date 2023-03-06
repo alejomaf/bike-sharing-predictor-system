@@ -7,6 +7,10 @@
 
 \documentclass{wsdcr}
 \usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{markdown}
+\usepackage{graphicx}
 
 \title{%
     Predictor de bicicletas prestadas \\
@@ -62,7 +66,70 @@ Finalmente, es importante tener en cuenta las variables relacionadas con los usu
 
 \section{Análisis de los datos}
 
+\begin{verbatim}
+    |            |       cnt |
+    |:-----------|----------:|
+    | instant    |  0.278379 |
+    | weekday    |  0.0268999|
+    | workingday |  0.0302844|
+    | weathersit | -0.142426 |
+    | atemp      |  0.400929 |
+    | windspeed  |  0.0932338|
+    | hum        | -0.322911 |
+    | casual     |  0.694564 |
+    | registered |  0.972151 |
+    | cnt        |  1        |
+\end{verbatim}
+
+La tabla muestra la correlación entre la variable dependiente "cnt" (número total de bicicletas alquiladas) y las diferentes variables independientes en el conjunto de datos.
+
+Se puede observar que la variable más fuertemente correlacionada con "cnt" es "registered" (correlación positiva de 0.972), que representa el número de usuarios registrados que alquilan bicicletas. La variable "casual" (correlación positiva de 0.695) también tiene una fuerte correlación con "cnt", lo que indica que los usuarios no registrados también tienen un impacto significativo en el número total de bicicletas alquiladas.
+
+Además, se puede observar una correlación positiva moderada entre "cnt" y "atemp" (0.401), que representa la temperatura ajustada. Esto sugiere que los usuarios tienen más probabilidades de alquilar bicicletas en días con temperaturas más cálidas.
+
+Por otro lado, se puede observar una correlación negativa moderada entre "cnt" y "hum" (-0.323), que representa la humedad. Esto sugiere que los usuarios tienen menos probabilidades de alquilar bicicletas en días más húmedos.
+
+Finalmente, "weathersit" (condiciones meteorológicas) y "windspeed" (velocidad del viento) tienen una correlación débil y negativa con "cnt", lo que sugiere que estos factores no tienen un impacto significativo en el número total de bicicletas alquiladas.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/histograms.png}
+    \caption{Histogramas}
+    \label{fig:histograms}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/line-charts.png}
+    \caption{Gráfico de líneas}
+    \label{fig:linecharts}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/correlational-matrix.png}
+    \caption{Matriz correlacional}
+    \label{fig:correlationmatrix}
+\end{figure}
+
+Para obtener los histogramas, utilizamos la función hist de la librería matplotlib, que nos permite visualizar la distribución de cada variable. Para obtener los gráficos de líneas correlacional, utilizamos la función plot de la misma librería, pasando como parámetros las variables a graficar y la variable cnt. Finalmente, para obtener la matriz correlacional, utilizamos la función heatmap de la librería seaborn.
+
+Estos gráficos nos permiten visualizar las relaciones entre las variables y la variable cnt. Los histogramas nos muestran la distribución de cada variable, mientras que los gráficos de líneas correlacional nos permiten ver la relación entre cada variable y cnt. La matriz correlacional nos muestra la relación entre todas las variables.
+
+De esta forma, podemos relacionar las conclusiones obtenidas en la última tabla con los gráficos obtenidos. Por ejemplo, la correlación positiva entre la variable atemp y cnt se refleja en el gráfico de líneas correlacional correspondiente, donde podemos ver una tendencia positiva entre ambas variables. Del mismo modo, la correlación negativa entre hum y cnt se refleja en el gráfico correspondiente, donde podemos ver una tendencia negativa entre ambas variables. Los histogramas nos muestran la distribución de cada variable y nos permiten ver si hay valores atípicos o si los datos siguen una distribución normal. La matriz correlacional nos muestra todas las correlaciones entre las variables, lo que nos permite tener una visión general de la relación entre todas las variables en conjunto.
+
 \section{Método}
+
+\subsection{Aprendizaje supervisado}
+En primer lugar, dividiremos nuestros datos en un conjunto de entrenamiento y un conjunto de prueba. A continuación, aplicaremos diferentes técnicas de regresión, como la regresión lineal o la regresión polinómica, para modelar la relación entre las variables independientes (día de la semana, hora del día, temperatura, etc.) y la variable dependiente (número de bicicletas alquiladas).
+
+Una vez que hayamos entrenado nuestro modelo de regresión, evaluaremos su rendimiento utilizando diferentes métricas, como el error cuadrático medio o el coeficiente de determinación. Si nuestro modelo tiene un buen rendimiento en el conjunto de prueba, lo utilizaremos para hacer predicciones sobre la demanda futura de bicicletas.
+
+\subsection{Aprendizaje no supervisado}
+Se utilizaran ténicas de clustering y reducción de dimensionalidad.
+En el caso del clustering, agruparíamos los datos en diferentes grupos o clústeres según su similitud, lo que nos permitiría identificar patrones y características comunes en los datos. Esto podría ser útil para segmentar la demanda de bicicletas y detectar posibles oportunidades de negocio.
+
+Por otro lado, la reducción de dimensionalidad nos permitiría reducir el número de variables o características en nuestros datos sin perder información importante. Esto podría ser útil si tenemos un gran número de variables y queremos simplificar nuestro modelo de regresión sin perder precisión en nuestras predicciones.
 
 \section{Resultados}
 
