@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  6 MAR 2023 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  6 MAR 2023 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,11 +690,12 @@ Package pdftex.def Info: charts/correlational-matrix.png  used on input line 110
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+(c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.bbl
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 140.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 2.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-[2 <./charts/histograms.png>] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.bbl
+ [2 <./charts/histograms.png>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
@@ -702,7 +703,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 24.
 AED: lastpage setting LastPage
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 164.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 162.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
 [3 <./charts/line-charts.png> <./charts/correlational-matrix.png>] (c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -719,13 +720,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  14260 strings out of 476339
  288968 string characters out of 5788120
- 1875340 words of memory out of 5000000
+ 1874340 words of memory out of 5000000
  34432 multiletter control sequences out of 15000+600000
  557233 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,16n,91p,915b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,15n,91p,915b,426s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineMT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb>
-Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (3 pages, 739382 bytes).
+Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (3 pages, 739099 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
