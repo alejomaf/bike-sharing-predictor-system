@@ -81,15 +81,16 @@ Finalmente, es importante tener en cuenta las variables relacionadas con los usu
     | cnt        |  1        |
 \end{verbatim}
 
-La tabla muestra la correlación entre la variable dependiente "cnt" (número total de bicicletas alquiladas) y las diferentes variables independientes en el conjunto de datos.
+La tabla muestra la correlación entre la variable dependiente \textit{cnt} (número total de bicicletas alquiladas) y las diferentes variables independientes en el conjunto de datos.
 
-Se puede observar que la variable más fuertemente correlacionada con "cnt" es "registered" (correlación positiva de 0.972), que representa el número de usuarios registrados que alquilan bicicletas. La variable "casual" (correlación positiva de 0.695) también tiene una fuerte correlación con "cnt", lo que indica que los usuarios no registrados también tienen un impacto significativo en el número total de bicicletas alquiladas.
+Se puede observar que la variable más fuertemente correlacionada con \textit{cnt} es \textit{registered} (correlación positiva de 0.972), que representa el número de usuarios registrados que alquilan bicicletas. La variable \textit{casual} (correlación positiva de 0.695) también tiene una fuerte correlación con \textit{cnt}, lo que indica que los usuarios no registrados también tienen un impacto significativo en el número total de bicicletas alquiladas.
 
-Además, se puede observar una correlación positiva moderada entre "cnt" y "atemp" (0.401), que representa la temperatura ajustada. Esto sugiere que los usuarios tienen más probabilidades de alquilar bicicletas en días con temperaturas más cálidas.
+Además, se puede observar una correlación positiva moderada entre \textit{cnt} y \textit{atemp} (0.401), que representa la temperatura ajustada. Esto sugiere que los usuarios tienen más probabilidades de alquilar bicicletas en días con temperaturas más cálidas.
 
-Por otro lado, se puede observar una correlación negativa moderada entre "cnt" y "hum" (-0.323), que representa la humedad. Esto sugiere que los usuarios tienen menos probabilidades de alquilar bicicletas en días más húmedos.
+Por otro lado, se puede observar una correlación negativa moderada entre \textit{cnt} y \textit{hum} (-0.323), que representa la humedad. Esto sugiere que los usuarios tienen menos probabilidades de alquilar bicicletas en días más húmedos.
 
-Finalmente, "weathersit" (condiciones meteorológicas) y "windspeed" (velocidad del viento) tienen una correlación débil y negativa con "cnt", lo que sugiere que estos factores no tienen un impacto significativo en el número total de bicicletas alquiladas.
+Finalmente, \textit{weathersit} (condiciones meteorológicas) y \textit{windspeed} (velocidad del viento) tienen una correlación débil y negativa con \textit{cnt}, lo que sugiere que estos factores no tienen un impacto significativo en el número total de bicicletas alquiladas.
+
 
 \begin{figure}[h]
     \centering
@@ -132,10 +133,22 @@ En el caso del clustering, agruparíamos los datos en diferentes grupos o clúst
 Por otro lado, la reducción de dimensionalidad nos permitiría reducir el número de variables o características en nuestros datos sin perder información importante. Esto podría ser útil si tenemos un gran número de variables y queremos simplificar nuestro modelo de regresión sin perder precisión en nuestras predicciones.
 
 \section{Resultados}
+\subsection{Regresión lineal}
+Se ha construido un modelo de regresión lineal para predecir el número de bicicletas prestadas en función de diversas características, como el día de la semana, si es un día laborable, las condiciones meteorológicas, la temperatura, la velocidad del viento, la humedad y la cantidad de usuarios casuales y registrados.
 
-\subsection{Limitaciones}
+El modelo se entrenó utilizando un conjunto de datos históricos y se evaluó en función de su capacidad para predecir el número de bicicletas prestadas en un conjunto de prueba separado. Los resultados de esta evaluación se resumen a continuación:
 
-\section{Conclusiones y Trabajo Futuro}
+Error cuadrático medio (MSE): $8.209062916187086e-22$ \
+Coeficiente de determinación (R$^2$): 1.0
+
+El error cuadrático medio (MSE) es una medida de cuán cerca están las predicciones del modelo a los valores reales. Un MSE más bajo indica un mejor ajuste del modelo. En este caso, el MSE es extremadamente bajo ($8.209062916187086e-22$), lo que sugiere que el modelo se ajusta muy bien a los datos.
+
+El coeficiente de determinación (R$^2$) es una medida de cuánta variación en los datos es explicada por el modelo. Un R$^2$ de 1.0 indica que el modelo explica toda la variación en los datos, lo que sugiere que las predicciones del modelo son perfectas. En este caso, el R$^2$ es 1.0, lo que indica un ajuste perfecto del modelo a los datos.
+
+\section{Discusión crítica}
+% \subsection{Limitaciones}
+
+% \section{Conclusiones y Trabajo Futuro}
 
 
 
@@ -143,14 +156,14 @@ Por otro lado, la reducción de dimensionalidad nos permitiría reducir el núme
 
 
 
-\appendices
-\section{}
-Appendix uno va aquí.
+% \appendices
+% \section{}
+% Appendix uno va aquí.
 
-% you can choose not to have a title for an appendix
-% if you want by leaving the argument blank
-\section{}
-Appendix dos va aquí.
+% % you can choose not to have a title for an appendix
+% % if you want by leaving the argument blank
+% \section{}
+% Appendix dos va aquí.
 
 
 % use section* for acknowledgment
