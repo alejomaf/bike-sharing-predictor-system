@@ -145,6 +145,47 @@ El error cuadrático medio (MSE) es una medida de cuán cerca están las predicc
 
 El coeficiente de determinación (R$^2$) es una medida de cuánta variación en los datos es explicada por el modelo. Un R$^2$ de 1.0 indica que el modelo explica toda la variación en los datos, lo que sugiere que las predicciones del modelo son perfectas. En este caso, el R$^2$ es 1.0, lo que indica un ajuste perfecto del modelo a los datos.
 
+\subsection{Clustering y Reducción de Dimensionalidad}
+
+En esta sección, se realiza un análisis de clustering y reducción de dimensionalidad en el conjunto de datos de préstamo de bicicletas. El objetivo de este análisis es encontrar patrones o agrupaciones en los datos que puedan ser útiles para comprender mejor las características de los préstamos de bicicletas.
+
+Para llevar a cabo el análisis de clustering, se utiliza el algoritmo K-Means, que es un método de aprendizaje no supervisado para identificar agrupaciones en conjuntos de datos basados en la similitud de las características. Antes de aplicar el algoritmo, se normalizaron los datos para que todas las características tengan el mismo rango de valores.
+
+Se empleó el método del codo (elbow method) para determinar el número óptimo de clusters. Este método consiste en calcular la suma de las distancias al cuadrado de cada punto al centroide más cercano (inercia) para diferentes valores de $k$, siendo $k$ el número de clusters. Luego, se grafica la inercia en función de $k$ y se busca un "codo" en la gráfica que indique un número óptimo de clusters.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/elbow_method_optimum_value.png}
+    \caption{Elbow method}
+    \label{fig:elbowmethod}
+\end{figure}
+
+Para la reducción de dimensionalidad, se utilizó el Análisis de Componentes Principales (PCA), que es una técnica para transformar un conjunto de datos de alta dimensión en uno de menor dimensión. Esto se logra proyectando los datos en un nuevo espacio formado por las direcciones (componentes principales) en las que los datos tienen la mayor variación. La reducción de dimensionalidad permite visualizar y analizar los datos de manera más eficiente y puede revelar patrones ocultos en los datos.
+
+Después de aplicar el algoritmo de clustering y reducción de dimensionalidad, se obtuvieron las agrupaciones y se visualizaron en un gráfico de dispersión bidimensional.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/pca.png}
+    \caption{Análisis de componentes principales}
+    \label{fig:principalcomponentanalysis}
+\end{figure}
+
+\section{Evaluación del modelo de aprendizaje no supervisado}
+
+Para evaluar la calidad del modelo de clustering, se utilizaron métricas internas, ya que no se disponía de etiquetas verdaderas para comparar con las etiquetas de clustering.
+
+\subsection{Coeficiente de silueta promedio}
+
+El coeficiente de silueta promedio obtenido fue de 0.1853. Esta métrica varía entre -1 y 1, siendo 1 el mejor valor posible. Un coeficiente de silueta cercano a 1 indica que los puntos están bien agrupados y los clusters están bien separados. Sin embargo, un valor de 0.1853 sugiere que la calidad del clustering podría mejorarse. La estructura de los clusters podría no ser adecuada o el número de clusters óptimos elegido podría no ser el ideal para los datos en cuestión.
+
+\subsection{Inercia}
+
+La inercia, que es la suma de las distancias al cuadrado dentro de los clusters, fue de 1304.70. Cuanto menor sea la inercia, mejor será el modelo de clustering, ya que esto indica que los puntos dentro de cada cluster están más cerca entre sí. Aunque la inercia por sí sola no proporciona una medida absoluta de la calidad del clustering, se puede utilizar para comparar diferentes modelos de clustering o para realizar una búsqueda de parámetros, como seleccionar el número óptimo de clusters.
+
+En resumen, las métricas internas sugieren que el modelo de clustering podría mejorarse. Se podría experimentar con diferentes técnicas de preprocesamiento de datos, ajustar el número de clusters o probar otros algoritmos de clustering para mejorar la calidad del modelo.
+
+
 \section{Discusión crítica}
 % \subsection{Limitaciones}
 
