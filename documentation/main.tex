@@ -12,6 +12,7 @@
 \usepackage{markdown}
 \usepackage{graphicx}
 
+
 \title{%
     Predictor de bicicletas prestadas \\
     \large Análisis Avanzado de Datos - Práctica Final }
@@ -131,6 +132,22 @@ Se utilizaran ténicas de clustering y reducción de dimensionalidad.
 En el caso del clustering, agruparíamos los datos en diferentes grupos o clústeres según su similitud, lo que nos permitiría identificar patrones y características comunes en los datos. Esto podría ser útil para segmentar la demanda de bicicletas y detectar posibles oportunidades de negocio.
 
 Por otro lado, la reducción de dimensionalidad nos permitiría reducir el número de variables o características en nuestros datos sin perder información importante. Esto podría ser útil si tenemos un gran número de variables y queremos simplificar nuestro modelo de regresión sin perder precisión en nuestras predicciones.
+\subsubsection{Etiquetado de los datos y su importancia en el aprendizaje no supervisado}
+
+El etiquetado de los datos es una técnica importante en el aprendizaje no supervisado que nos permite asignar categorías o etiquetas a los datos en función de ciertos criterios. Al asignar etiquetas a los datos, podemos transformar un conjunto de datos no etiquetado en uno etiquetado que puede ser utilizado para evaluar el rendimiento de un modelo de aprendizaje no supervisado. También puede ayudar a identificar patrones y relaciones subyacentes en los datos que no serían evidentes de otra manera.
+
+En este caso, el etiquetado se realizó en función del valor total de bicicletas alquiladas (\textit{cnt}). El objetivo era dividir el conjunto de datos en tres categorías: bajo, medio y alto, según la cantidad de bicicletas alquiladas. El código para realizar el etiquetado es el siguiente:
+
+{\fontsize{7pt}{12pt}\selectfont % establece el tamaño de fuente a footnotesize y el espacio de línea a 12pt
+\begin{verbatim}
+labels = ['bajo', 'medio', 'alto']
+df['label'] = pd.qcut(df['cnt'], q=3, labels=labels)
+\end{verbatim}
+}
+
+Se define una lista de etiquetas que representan las tres categorías. La función \texttt{pd.qcut()} se utiliza para dividir la columna \textit{cnt} en tres intervalos de igual tamaño y asignar las etiquetas correspondientes. El resultado es un nuevo DataFrame que incluye una columna adicional llamada \textit{label} que contiene las etiquetas asignadas para cada registro.
+
+Al etiquetar los datos de esta manera, podemos utilizar la información proporcionada por las etiquetas para evaluar la calidad de los agrupamientos generados por un algoritmo de aprendizaje no supervisado, como k-means. Esto nos permite cuantificar el rendimiento del modelo y explorar posibles mejoras o ajustes en la configuración del algoritmo.
 
 \section{Resultados}
 \subsection{Regresión lineal}
@@ -151,7 +168,7 @@ En esta sección, se realiza un análisis de clustering y reducción de dimensio
 
 Para llevar a cabo el análisis de clustering, se utiliza el algoritmo K-Means, que es un método de aprendizaje no supervisado para identificar agrupaciones en conjuntos de datos basados en la similitud de las características. Antes de aplicar el algoritmo, se normalizaron los datos para que todas las características tengan el mismo rango de valores.
 
-Se empleó el método del codo (elbow method) para determinar el número óptimo de clusters. Este método consiste en calcular la suma de las distancias al cuadrado de cada punto al centroide más cercano (inercia) para diferentes valores de $k$, siendo $k$ el número de clusters. Luego, se grafica la inercia en función de $k$ y se busca un "codo" en la gráfica que indique un número óptimo de clusters.
+Se empleó el método del codo (elbow method) para determinar el número óptimo de clusters. Este método consiste en calcular la suma de las distancias al cuadrado de cada punto al centroide más cercano (inercia) para diferentes valores de $k$, siendo $k$ el número de clusters. Luego, se grafica la inercia en función de $k$ y se busca un \textit{codo} en la gráfica que indique un número óptimo de clusters. En este caso se ha interpretado que el \textbf{número óptimo de clústeres es: 3}.
 
 \begin{figure}[h]
     \centering
@@ -166,35 +183,188 @@ Después de aplicar el algoritmo de clustering y reducción de dimensionalidad, 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{charts/pca.png}
+    \includegraphics[width=0.4\textwidth]{charts/normalized/kmn_pca.png}
     \caption{Análisis de componentes principales}
     \label{fig:principalcomponentanalysis}
 \end{figure}
 
+En el caso de no aplicar la agrupación por dimensionalidad nos queda algo así:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/normalized/kmn_without_pca.png}
+    \caption{Análisis de componentes principales sin agrupación}
+    \label{fig:principalcomponentanalysiswithoutpca}
+\end{figure}
+
+Sin aplicar PCA, los datos se visualizan en su espacio de características original. Al representar los puntos en función de dos características específicas, se observa que los puntos se agrupan en filas o columnas, lo que dificulta la identificación de patrones o tendencias en los datos. Esto puede deberse a que las dos características elegidas no capturan la mayoría de la varianza en los datos, y las estructuras subyacentes están ocultas en otras dimensiones.
+Al aplicar PCA a los datos, se transforman en un nuevo espacio de características, en el que los componentes principales capturan la mayor parte de la varianza en los datos. Al visualizar los datos en función de los primeras dos componentes principales, las estructuras subyacentes son más evidentes, ya que estos componentes representan la mayor parte de la información en los datos.
+
+La matriz de confusión obtenida ha sido esta:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/normalized/kmn_matrix_confussion.png}
+    \caption{Matriz de confusión del aprendizaje no supervisado}
+    \label{fig:kmnmatrizconfussion}
+\end{figure}
+
 \section{Evaluación del modelo de aprendizaje no supervisado}
 
-Para evaluar la calidad del modelo de clustering, se utilizaron métricas internas, ya que no se disponía de etiquetas verdaderas para comparar con las etiquetas de clustering.
+En esta sección, evaluamos el modelo de aprendizaje no supervisado utilizando diversas métricas y discutimos su relevancia en el contexto del problema de predicción del número de bicicletas alquiladas en una hora determinada. A continuación, se presentan los valores de las métricas obtenidas y se explica su significado.
 
 \subsection{Coeficiente de silueta promedio}
 
-El coeficiente de silueta promedio obtenido fue de 0.1853. Esta métrica varía entre -1 y 1, siendo 1 el mejor valor posible. Un coeficiente de silueta cercano a 1 indica que los puntos están bien agrupados y los clusters están bien separados. Sin embargo, un valor de 0.1853 sugiere que la calidad del clustering podría mejorarse. La estructura de los clusters podría no ser adecuada o el número de clusters óptimos elegido podría no ser el ideal para los datos en cuestión.
+El coeficiente de silueta promedio es una medida de la calidad de los agrupamientos generados por un algoritmo de agrupamiento. Este coeficiente varía entre -1 y 1, donde un valor cercano a 1 indica que los grupos están bien separados y un valor cercano a -1 indica que los grupos están mal separados. En este caso, el coeficiente de silueta promedio obtenido es 0.2495.
+
+\begin{itemize}
+    \item \textbf{Valor obtenido:} 0.2495
+\end{itemize}
 
 \subsection{Inercia}
 
-La inercia, que es la suma de las distancias al cuadrado dentro de los clusters, fue de 1304.70. Cuanto menor sea la inercia, mejor será el modelo de clustering, ya que esto indica que los puntos dentro de cada cluster están más cerca entre sí. Aunque la inercia por sí sola no proporciona una medida absoluta de la calidad del clustering, se puede utilizar para comparar diferentes modelos de clustering o para realizar una búsqueda de parámetros, como seleccionar el número óptimo de clusters.
+La inercia es una medida de la dispersión interna de los grupos y se calcula como la suma de las distancias al cuadrado de cada punto al centroide de su grupo. Un valor de inercia más bajo indica una mejor calidad de agrupamiento. En este caso, la inercia obtenida es 1841.0286.
 
-En resumen, las métricas internas sugieren que el modelo de clustering podría mejorarse. Se podría experimentar con diferentes técnicas de preprocesamiento de datos, ajustar el número de clusters o probar otros algoritmos de clustering para mejorar la calidad del modelo.
+\begin{itemize}
+    \item \textbf{Valor obtenido:} 1841.0286
+\end{itemize}
 
+\subsection{Índice ARI}
+
+El índice Adjusted Rand Index (ARI) es una medida de similitud entre dos agrupamientos, en este caso, el agrupamiento generado por el modelo y el agrupamiento real (etiquetas verdaderas). El ARI varía entre -1 y 1, donde un valor cercano a 1 indica que los dos agrupamientos son casi idénticos y un valor cercano a -1 indica que los agrupamientos son completamente diferentes. En este caso, el índice ARI obtenido es 0.2245.
+
+\begin{itemize}
+    \item \textbf{Valor obtenido:} 0.2245
+\end{itemize}
+
+\subsection{Índice AMI}
+
+El índice Adjusted Mutual Information (AMI) es otra medida de similitud entre dos agrupamientos que tiene en cuenta la información mutua entre ellos, ajustada para tener en cuenta la posibilidad de obtener valores altos de información mutua por casualidad. El AMI varía entre 0 y 1, donde un valor cercano a 1 indica que los dos agrupamientos son casi idénticos y un valor cercano a 0 indica que no hay relación entre los agrupamientos. En este caso, el índice AMI obtenido es 0.2468.
+
+\begin{itemize}
+    \item \textbf{Valor obtenido:} 0.2468
+\end{itemize}
+
+\subsection{Matriz de confusión}
+A partir de la matriz de confusión, podemos observar lo siguiente:
+\begin{enumerate}
+    \item El modelo es bastante preciso al predecir la clase ``Bajo'', con un 71.97\% de las predicciones correctas. Sin embargo, también hay una proporción significativa de casos clasificados incorrectamente como ``Medio'' (10.49\%) y ``Alto'' (17.54\%).
+    \item En el caso de la clase ``Medio'', el modelo tiene una precisión del 49.49\%. Aproximadamente el 35.38\% de los casos en esta clase se clasificaron incorrectamente como ``Alto'' y el 15.13\% como ``Bajo''.
+    \item Para la clase ``Alto'', el modelo tiene un rendimiento más bajo, con solo el 39.04\% de las predicciones correctas. El 60.93\% de los casos se clasificaron incorrectamente como ``Medio'', mientras que apenas el 0.03\% se clasificó como ``Bajo''.
+\end{enumerate}
+Estos resultados sugieren que el modelo de aprendizaje no supervisado tiene un rendimiento moderado en la predicción de la cantidad de bicicletas alquiladas en función de las características proporcionadas. El modelo tiene un rendimiento aceptable al predecir la clase ``Bajo'', pero su precisión es menor en las clases ``Medio'' y ``Alto''. Esto podría deberse a la dificultad de separar estas clases utilizando solo el algoritmo k-means y PCA.
 
 \section{Discusión crítica}
-% \subsection{Limitaciones}
 
-% \section{Conclusiones y Trabajo Futuro}
+En este estudio, se han explorado dos enfoques diferentes para predecir el número de bicicletas alquiladas en un momento específico del día: un modelo de \textbf{aprendizaje supervisado} y un modelo de \textbf{aprendizaje no supervisado}. A continuación, se presenta una comparación crítica de ambos enfoques en relación con nuestro objetivo y su posible utilización en el futuro.
+
+\subsection{Aprendizaje supervisado}
+
+El modelo de aprendizaje supervisado, basado en la \textbf{regresión lineal}, ha demostrado un excelente rendimiento en la predicción del número de bicicletas prestadas en función de diversas características. El \textbf{Error Cuadrático Medio (MSE)} es extremadamente bajo ($8.209062916187086e-22$), lo que sugiere que el modelo se ajusta muy bien a los datos. Además, el \textbf{Coeficiente de Determinación (R$^2$)} es 1.0, lo que indica un ajuste perfecto del modelo a los datos.
+
+Dado su alto rendimiento, el modelo de aprendizaje supervisado sería útil para predecir con precisión el número de bicicletas alquiladas en momentos específicos del día y podría ser utilizado para tomar decisiones informadas sobre la gestión de recursos, la promoción de ofertas y la planificación de mejoras en la infraestructura de bicicletas compartidas.
+
+\subsection{Aprendizaje no supervisado}
+
+El modelo de aprendizaje no supervisado, basado en el algoritmo de \textbf{K-means}, ha demostrado un rendimiento moderado en la clasificación de las diferentes clases de alquileres de bicicletas (bajo, medio y alto). Aunque algunos indicadores, como el \textbf{Índice ARI} y el \textbf{Índice AMI}, sugieren que hay cierta similitud entre los agrupamientos generados por el modelo y las etiquetas verdaderas, hay margen de mejora en la precisión del agrupamiento.
+
+El enfoque de aprendizaje no supervisado puede proporcionar información útil sobre la estructura subyacente de los datos y ayudar a identificar patrones y tendencias en el alquiler de bicicletas. Sin embargo, su rendimiento en la predicción del número exacto de bicicletas alquiladas en momentos específicos del día puede ser inferior al del modelo de aprendizaje supervisado.
+
+\subsection{Limitaciones}
+
+A pesar de los resultados prometedores obtenidos en este estudio, es importante reconocer algunas limitaciones que pueden afectar la generalización y aplicabilidad de los modelos en diferentes contextos y escenarios.
+
+\subsubsection{Sobreajuste en el modelo supervisado}
+
+Dado que el modelo de aprendizaje supervisado muestra un \textbf{ajuste perfecto} a los datos de entrenamiento, existe la posibilidad de que haya \textbf{sobreajuste} en el modelo. El sobreajuste se produce cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien a nuevos datos. Esto podría limitar la efectividad del modelo al enfrentarse a situaciones no vistas previamente o al aplicarse en diferentes ubicaciones y contextos.
+
+\subsubsection{Calidad de las etiquetas en el modelo no supervisado}
+
+La efectividad del modelo de aprendizaje no supervisado se basa en gran medida en la calidad de las \textbf{etiquetas} utilizadas para evaluar el agrupamiento. En este estudio, las etiquetas se han generado utilizando un enfoque basado en \textbf{cuartiles}, lo que podría no ser óptimo para capturar las diferencias reales en los patrones de alquiler de bicicletas. Una técnica de etiquetado diferente o más sofisticada podría mejorar la evaluación y el rendimiento del modelo no supervisado.
+
+\subsubsection{Factores no considerados}
+
+Tanto el modelo supervisado como el no supervisado se basan en un conjunto limitado de \textbf{variables} que se consideraron relevantes para el alquiler de bicicletas. Sin embargo, es posible que existan otros factores que influyan en el alquiler de bicicletas y que no se hayan tenido en cuenta en este estudio, como eventos especiales, cambios en las políticas de transporte o incluso la ubicación de las estaciones de alquiler.
+
+\subsubsection{Limitaciones temporales}
+
+Los modelos desarrollados en este estudio se basan en datos históricos hasta \textbf{septiembre de 2021}. Dado que los patrones de movilidad y los factores que influyen en el alquiler de bicicletas pueden cambiar con el tiempo, es crucial actualizar y validar los modelos regularmente utilizando datos más recientes para garantizar que sigan siendo precisos y relevantes.
+
+\section{Conclusiones y Trabajo Futuro}
+
+\subsection{Conclusiones}
+
+En este estudio, se ha explorado el uso de modelos de aprendizaje supervisado y no supervisado para predecir el número de bicicletas alquiladas en función de diversas variables, como el clima, la temperatura, la velocidad del viento, la humedad y el tipo de usuario. El modelo de aprendizaje supervisado, basado en la regresión lineal, mostró un ajuste perfecto a los datos, aunque puede estar sujeto al sobreajuste. Por otro lado, el modelo de aprendizaje no supervisado, basado en el algoritmo k-means, proporcionó resultados moderados, pero con un margen de mejora.
+
+Ambos enfoques han demostrado ser útiles para abordar el problema del alquiler de bicicletas. Sin embargo, se deben tener en cuenta las limitaciones identificadas en la sección de discusión crítica al aplicar estos modelos en diferentes contextos y al tomar decisiones basadas en sus resultados.
+
+\subsection{Trabajo Futuro}
+
+Dado que siempre hay margen de mejora en la predicción y el análisis de datos, se proponen las siguientes direcciones para el trabajo futuro:
+
+\begin{itemize}
+    \item \textbf{Mejorar el rendimiento del modelo supervisado}: Utilizar técnicas de regularización, como la regresión de Lasso o Ridge, para abordar el posible sobreajuste en el modelo supervisado y mejorar su capacidad de generalización.
+    \item \textbf{Explorar otros algoritmos de aprendizaje no supervisado}: Probar diferentes algoritmos de agrupamiento, como DBSCAN o HDBSCAN, para mejorar la evaluación y el rendimiento del modelo no supervisado.
+    \item \textbf{Incorporar más variables}: Investigar y agregar otras variables que puedan ser relevantes para el alquiler de bicicletas, como la ubicación de las estaciones de alquiler o datos sobre eventos especiales y políticas de transporte.
+    \item \textbf{Actualizar y validar los modelos con datos más recientes}: A medida que estén disponibles nuevos datos, actualizar y validar los modelos para garantizar que sigan siendo precisos y relevantes en el tiempo.
+    \item \textbf{Implementar modelos de aprendizaje profundo}: Explorar la aplicación de modelos de aprendizaje profundo, como redes neuronales, para mejorar la precisión de las predicciones y adaptarse a patrones más complejos en los datos.
+    \item \textbf{Analizar el impacto de las intervenciones}: Investigar cómo diferentes intervenciones, como la promoción del uso de bicicletas o la mejora de la infraestructura, pueden afectar el alquiler de bicicletas y utilizar los modelos desarrollados para evaluar su efectividad.
+
+\end{itemize}
+
+Al seguir estas direcciones, este trabajo puede contribuir aún más al entendimiento y la predicción del alquiler de bicicletas, lo que a su vez puede ayudar a informar políticas y decisiones de transporte más efectivas y sostenibles.
 
 
 
+\section*{Bibliografía}
 
+\begin{thebibliography}{9}
 
+    \bibitem{datasciencecentral}
+    Brownlee, J. (2017).
+    \textit{How to Prepare Data For Machine Learning}.
+    Retrieved from Data Science Central: \url{https://machinelearningmastery.com/how-to-prepare-data-for-machine-learning/}
+
+    \bibitem{machinelearningmastery}
+    Brownlee, J. (2018).
+    \textit{Introduction to Principal Component Analysis (PCA)}.
+    Retrieved from Machine Learning Mastery: \url{https://machinelearningmastery.com/principal-components-analysis-for-dimensionality-reduction-in-python/}
+
+    \bibitem{datasciencecentral}
+    Brownlee, J. (2017).
+    \textit{How to Prepare Data For Machine Learning}.
+    Retrieved from Data Science Central: \url{https://www.datasciencecentral.com/profiles/blogs/how-to-prepare-data-for-machine-learning}
+
+    \bibitem{barcelonageeks}
+    Barcelona Geeks. (2022).
+    \textit{Método del codo para el valor óptimo de k en k-means}.
+    Retrieved from Barcelona Geeks: \url{https://barcelonageeks.com/metodo-del-codo-para-el-valor-optimo-de-k-en-kmeans/}
+
+    \bibitem{scikit-learn}
+    Scikit-learn. (2022).
+    \textit{Adjusted Rand Index}.
+    Retrieved from Scikit-learn: \url{https://scikit-learn.org/stable/auto_examples/cluster/plot_adjusted_for_chance_measures.html}
+
+    \bibitem{aprendemachinelearning}
+    Aprende Machine Learning. (2022).
+    \textit{k-means en Python paso a paso}.
+    Retrieved from Aprende Machine Learning: \url{https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/}
+
+    \bibitem{datasourceai}
+    Datasource.ai. (2022).
+    \textit{Comprensión de la matriz de confusión y cómo implementarla en Python}.
+    Retrieved from Datasource.ai: \url{https://www.datasource.ai/es/data-science-articles/comprension-de-la-matriz-de-confusion-y-como-implementarla-en-python}
+
+    \bibitem{cienciadedatos}
+    Ciencia de Datos. (2022).
+    \textit{Regresión lineal en Python}.
+    Retrieved from Ciencia de Datos: \url{https://www.cienciadedatos.net/documentos/py10-regresion-lineal-python.html}
+
+    \bibitem{codigopiton}
+    Código Piton. (2022).
+    \textit{Cómo hacer un histograma en Python}.
+    Retrieved from Código Piton: \url{https://www.codigopiton.com/como-hacer-un-histograma-en-python/#:~:text=Para%20hacer%20un%20histograma%20en%20Python%20es%20necesario,librer%C3%ADa%20como%20Matplotlib%2C%20Seaborn%2C%20Bokeh%2C%20Altair%20o%20Plotly.}
+
+\end{thebibliography}
 
 
 % \appendices

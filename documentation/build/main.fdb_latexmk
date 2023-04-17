@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex build/main"] 1681309065 "build/main.aux" "build/main.bbl" "build/main" 1681309069 0
+["bibtex build/main"] 1681755011 "build/main.aux" "build/main.bbl" "build/main" 1681755016 0
   "./citations.bib" 1678008121 1644 747a483610d4d3f093cd963104c83fda ""
   "C:/Users/alejo/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "build/main.aux" 1681309068 2800 c16bdd40c3ff3438c4309b3f0d983a02 "pdflatex"
+  "build/main.aux" 1681755015 5148 4c62ed3d87c82a28da809f92bad90e19 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1681309065 "c:/Users/alejo/Documents/GitHub/bike-sharing-predictor-system/documentation/main.tex" "build/main.pdf" "main" 1681309069 0
-  "C:/Users/alejo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1678098909 133402 c83dac94012a96a1034686c7d5f16fd4 ""
+["pdflatex"] 1681755012 "c:/Users/alejo/Documents/GitHub/bike-sharing-predictor-system/documentation/main.tex" "build/main.pdf" "main" 1681755016 0
+  "C:/Users/alejo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1681751336 133402 c83dac94012a96a1034686c7d5f16fd4 ""
   "C:/Users/alejo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk" 1678012736 21356 4b4be716871e1416fadb854327c28eb7 ""
   "C:/Users/alejo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1678012737 23808 db8b53e20caef278ea565b03f8c96644 ""
   "C:/Users/alejo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1678013240 28440 3bd4c66ec231bb4a284d78ab581fc552 ""
@@ -159,16 +159,18 @@
   "C:/Users/alejo/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044406800 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/alejo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/alejo/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "build/main.aux" 1681309068 2800 c16bdd40c3ff3438c4309b3f0d983a02 "pdflatex"
-  "build/main.bbl" 1681309065 901 628a2a8c68e066122d1514411e0b8455 "bibtex build/main"
-  "c:/Users/alejo/Documents/GitHub/bike-sharing-predictor-system/documentation/main.tex" 1681309061 18368 d901083a48dc36c6876b388ab9b7ca7c ""
+  "build/main.aux" 1681755015 5148 4c62ed3d87c82a28da809f92bad90e19 "pdflatex"
+  "build/main.bbl" 1681755012 901 628a2a8c68e066122d1514411e0b8455 "bibtex build/main"
+  "c:/Users/alejo/Documents/GitHub/bike-sharing-predictor-system/documentation/main.tex" 1681755007 33755 b840272067c33209ae0f26449c0e1aa7 ""
   "charts/correlational-matrix.png" 1678100161 81011 553657a60c20f3c605b9c12f30ec7228 ""
-  "charts/elbow_method_optimum_value.png" 1681305580 27296 30e52595c531a4a12945a5a433eb630c ""
+  "charts/elbow_method_optimum_value.png" 1681749509 32281 87d6671d7e00647da9cd097209d99314 ""
   "charts/histograms.png" 1678100140 83497 de63002ddfafbda8db71c8d7bba72e54 ""
   "charts/line-charts.png" 1678100150 272874 9a8539cc076a269de0fba22863eed70e ""
-  "charts/pca.png" 1681307776 121553 fb99612ff65dd9406aa40ba7981bcb62 ""
+  "charts/normalized/kmn_matrix_confussion.png" 1681749465 36708 9760dfe55108de4f267181fe13c4b9f9 ""
+  "charts/normalized/kmn_pca.png" 1681749448 284070 27e425d578b7ae3c9ee33dccb41ed9fd ""
+  "charts/normalized/kmn_without_pca.png" 1681749488 48573 ce89fa5884617c344a2802812a960dc9 ""
   "logo_gips_unit.png" 1678008121 38854 698b437415c1effc1bc03e602de47014 ""
-  "main.tex" 1681309061 18368 d901083a48dc36c6876b388ab9b7ca7c ""
+  "main.tex" 1681755007 33755 b840272067c33209ae0f26449c0e1aa7 ""
   "wsdcr.cls" 1678099600 4851 669d50503668f7cada7d04b45c52a6ca ""
   (generated)
   "build/main.aux"
