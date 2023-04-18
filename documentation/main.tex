@@ -123,10 +123,9 @@ De esta forma, podemos relacionar las conclusiones obtenidas en la última tabla
 \section{Método}
 
 \subsection{Aprendizaje supervisado}
-En primer lugar, dividiremos nuestros datos en un conjunto de entrenamiento y un conjunto de prueba. A continuación, aplicaremos diferentes técnicas de regresión, como la regresión lineal o la regresión polinómica, para modelar la relación entre las variables independientes (día de la semana, hora del día, temperatura, etc.) y la variable dependiente (número de bicicletas alquiladas).
+En primer lugar, dividiremos nuestros datos en un conjunto de entrenamiento y un conjunto de prueba. A continuación, aplicaremos \textbf{Random Forest}, para modelar la relación entre las variables independientes (día de la semana, hora del día, temperatura, etc.) y la variable dependiente (número de bicicletas alquiladas).
 
-Una vez que hayamos entrenado nuestro modelo de regresión, evaluaremos su rendimiento utilizando diferentes métricas, como el error cuadrático medio o el coeficiente de determinación. Si nuestro modelo tiene un buen rendimiento en el conjunto de prueba, lo utilizaremos para hacer predicciones sobre la demanda futura de bicicletas.
-
+Una vez que hayamos entrenado nuestro modelo de \textbf{Random Forest}, evaluaremos su rendimiento utilizando diferentes métricas, como el \textbf{error cuadrático medio} o el \textbf{coeficiente de determinación}. Si nuestro modelo tiene un buen rendimiento en el conjunto de prueba, lo utilizaremos para hacer predicciones sobre la demanda futura de bicicletas.
 \subsection{Aprendizaje no supervisado}
 Se utilizaran ténicas de clustering y reducción de dimensionalidad.
 En el caso del clustering, agruparíamos los datos en diferentes grupos o clústeres según su similitud, lo que nos permitiría identificar patrones y características comunes en los datos. Esto podría ser útil para segmentar la demanda de bicicletas y detectar posibles oportunidades de negocio.
@@ -150,17 +149,28 @@ Se define una lista de etiquetas que representan las tres categorías. La funci�
 Al etiquetar los datos de esta manera, podemos utilizar la información proporcionada por las etiquetas para evaluar la calidad de los agrupamientos generados por un algoritmo de aprendizaje no supervisado, como k-means. Esto nos permite cuantificar el rendimiento del modelo y explorar posibles mejoras o ajustes en la configuración del algoritmo.
 
 \section{Resultados}
-\subsection{Regresión lineal}
-Se ha construido un modelo de regresión lineal para predecir el número de bicicletas prestadas en función de diversas características, como el día de la semana, si es un día laborable, las condiciones meteorológicas, la temperatura, la velocidad del viento, la humedad y la cantidad de usuarios casuales y registrados.
+\subsection{Random Forest}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{charts/random_forest.png}
+    \caption{Random Forest}
+    \label{fig:randomforest}
+\end{figure}
+Se ha construido un modelo de \textbf{Random Forest} para predecir el número de bicicletas prestadas en función de diversas características, como el día de la semana, si es un día laborable, las condiciones meteorológicas, la temperatura, la velocidad del viento, la humedad y la cantidad de usuarios casuales y registrados.
 
 El modelo se entrenó utilizando un conjunto de datos históricos y se evaluó en función de su capacidad para predecir el número de bicicletas prestadas en un conjunto de prueba separado. Los resultados de esta evaluación se resumen a continuación:
 
-Error cuadrático medio (MSE): $8.209062916187086e-22$ \
-Coeficiente de determinación (R$^2$): 1.0
+\textbf{Error cuadrático medio (MSE)}: 1585.7507070555234
+\textbf{Coeficiente de determinación (R$^2$)}: 0.949921676677232
 
-El error cuadrático medio (MSE) es una medida de cuán cerca están las predicciones del modelo a los valores reales. Un MSE más bajo indica un mejor ajuste del modelo. En este caso, el MSE es extremadamente bajo ($8.209062916187086e-22$), lo que sugiere que el modelo se ajusta muy bien a los datos.
+El error cuadrático medio (MSE) es una medida de cuán cerca están las predicciones del modelo a los valores reales. Un MSE más bajo indica un mejor ajuste del modelo. En este caso, el MSE es 1585.7507070555234, lo que sugiere que el modelo se ajusta bastante bien a los datos.
 
-El coeficiente de determinación (R$^2$) es una medida de cuánta variación en los datos es explicada por el modelo. Un R$^2$ de 1.0 indica que el modelo explica toda la variación en los datos, lo que sugiere que las predicciones del modelo son perfectas. En este caso, el R$^2$ es 1.0, lo que indica un ajuste perfecto del modelo a los datos.
+El coeficiente de determinación (R$^2$) es una medida de cuánta variación en los datos es explicada por el modelo. Un R$^2$ cercano a 1.0 indica que el modelo explica la mayor parte de la variación en los datos, lo que sugiere que las predicciones del modelo son bastante precisas. En este caso, el R$^2$ es 0.949921676677232, lo que indica un buen ajuste del modelo a los datos.
+
+\textbf{Puntuaciones de la validación cruzada}: [0.94951908, 0.94300248, 0.94702184, 0.9489082, 0.94803821]
+\textbf{Puntuación media de la validación cruzada}: 0.9472979615194731
+
+La validación cruzada es una técnica que nos ayuda a evaluar el rendimiento del modelo en diferentes subconjuntos de datos. En este caso, la puntuación media de la validación cruzada es 0.9472979615194731, lo que indica que el modelo de Random Forest es consistente y se ajusta bien a los datos en general.
 
 \subsection{Clustering y Reducción de Dimensionalidad}
 

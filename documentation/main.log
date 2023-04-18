@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  11 APR 2023 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.31)  18 APR 2023 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -491,37 +491,41 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
+
+
+LaTeX Warning: Label `datasciencecentral' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls1libertinust1math.fd
 File: ls1libertinust1math.fd 2016/03/23 Fontinst v1.933 font definitions for LS1/libertinust1math.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls2libertinust1mathsym.fd
 File: ls2libertinust1mathsym.fd 2015/04/17 v1.1.2-latex LibertinusT1Mathsym LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
+(Font)              scaled to size 9.0pt on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
@@ -583,65 +587,65 @@ Package caption Info: End \AtBeginDocument code.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 21.
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
-LaTeX Font Info:    Trying to load font information for T1+libertine on input line 23.
-LaTeX Font Info:    No file T1libertine.fd. on input line 23.
+(lastpage)             ! on input line 22.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Font Info:    Trying to load font information for T1+libertine on input line 24.
+LaTeX Font Info:    No file T1libertine.fd. on input line 24.
 
 LaTeX Font Warning: Font shape `T1/libertine/b/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 23.
+(Font)              using `T1/cmr/m/n' instead on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/libertine/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 23.
+(Font)              using `T1/cmr/m/n' instead on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/libertine/m/sc' undefined
-(Font)              using `T1/libertine/m/n' instead on input line 25.
+(Font)              using `T1/libertine/m/n' instead on input line 26.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 37.
+(Font)              scaled to size 9.0pt on input line 38.
 <logo_gips_unit.png, id=1, 853.5087pt x 85.2786pt>
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 66.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 67.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 66.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 67.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 66.
+(Font)              scaled to size 9.0pt on input line 67.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 66.
+(Font)              scaled to size 9.0pt on input line 67.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 66.
+(Font)              scaled to size 12.0pt on input line 67.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./logo_gips_unit.png>]
-LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-TLF on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-TLF on input line 70.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-TLF.fd
 File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <9> not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 69.
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 69.
+(Font)              scaled to size 9.0pt on input line 70.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 84.
+(Font)              scaled to size 9.0pt on input line 85.
 <charts/histograms.png, id=15, 903.375pt x 898.3161pt>
 File: charts/histograms.png Graphic file (type png)
 <use charts/histograms.png>
-Package pdftex.def Info: charts/histograms.png  used on input line 97.
+Package pdftex.def Info: charts/histograms.png  used on input line 98.
 (pdftex.def)             Requested size: 205.24384pt x 204.08623pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 98.
+(Font)              scaled to size 8.0pt on input line 99.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -649,7 +653,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <charts/line-charts.png, id=16, 903.375pt x 898.3161pt>
 File: charts/line-charts.png Graphic file (type png)
 <use charts/line-charts.png>
-Package pdftex.def Info: charts/line-charts.png  used on input line 104.
+Package pdftex.def Info: charts/line-charts.png  used on input line 105.
 (pdftex.def)             Requested size: 205.24384pt x 204.08623pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -657,87 +661,328 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <charts/correlational-matrix.png, id=17, 614.295pt x 581.7735pt>
 File: charts/correlational-matrix.png Graphic file (type png)
 <use charts/correlational-matrix.png>
-Package pdftex.def Info: charts/correlational-matrix.png  used on input line 111.
+Package pdftex.def Info: charts/correlational-matrix.png  used on input line 112.
 (pdftex.def)             Requested size: 205.24384pt x 194.3738pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Font Warning: Font shape `T1/libertine/m/sl' undefined
+(Font)              using `T1/libertine/m/n' instead on input line 134.
+
+File: logo_gips_unit.png Graphic file (type png)
+<use logo_gips_unit.png>
+Package pdftex.def Info: logo_gips_unit.png  used on input line 137.
+(pdftex.def)             Requested size: 216.81pt x 21.6618pt.
+[2 <./charts/histograms.png>]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 140.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <7> not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried instead on input line 141.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 141.
+<charts/random_forest.png, id=26, 573.8238pt x 570.933pt>
+File: charts/random_forest.png Graphic file (type png)
+<use charts/random_forest.png>
+Package pdftex.def Info: charts/random_forest.png  used on input line 155.
+(pdftex.def)             Requested size: 205.24384pt x 204.21153pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathex on input line 164.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls2libertinust1mathex.fd
+File: ls2libertinust1mathex.fd 2016/03/15 v1.0.0-latex LibertinusMath extensions LS2 font definitions
+)
+LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 164.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 164.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 164.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for LS1+libertinust1mathbb on input line 164.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls1libertinust1mathbb.fd
+File: ls1libertinust1mathbb.fd 2016/08/22 latex LibertinusT1Mathbb LS1 font definitions
+)
+LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
+(Font)              scaled to size 5.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
+(Font)              scaled to size 9.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
+(Font)              scaled to size 6.0pt on input line 164.
+LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
+(Font)              scaled to size 5.0pt on input line 164.
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+[]\T1/LinuxLibertineT-TLF/b/n/9 Puntuaciones de la va-li-da-ción cru-za-da\T1/LinuxLibertineT-TLF/m/n/9 : [0.94951908,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+\T1/LinuxLibertineT-TLF/m/n/9 0.94300248, 0.94702184, 0.9489082, 0.94803821] \T1/LinuxLibertineT-TLF/b/n/9 Pun-tua-ción
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 173--174
+[]\T1/LinuxLibertineT-TLF/m/n/9 La va-li-da-ción cru-za-da es una téc-ni-ca que nos ayu-da a eva-
+ []
+
+<charts/elbow_method_optimum_value.png, id=27, 421.3341pt x 330.2739pt>
+File: charts/elbow_method_optimum_value.png Graphic file (type png)
+<use charts/elbow_method_optimum_value.png>
+Package pdftex.def Info: charts/elbow_method_optimum_value.png  used on input line 185.
+(pdftex.def)             Requested size: 205.24384pt x 160.88313pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 140.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 191.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-[2 <./charts/histograms.png>]
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS2/libertinust1mathsym/m/n' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathex on input line 141.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls2libertinust1mathex.fd
-File: ls2libertinust1mathex.fd 2016/03/15 v1.0.0-latex LibertinusMath extensions LS2 font definitions
-)
-LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS2/libertinust1mathex/m/n' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 141.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 141.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 141.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for LS1+libertinust1mathbb on input line 141.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/libertinust1math/ls1libertinust1mathbb.fd
-File: ls1libertinust1mathbb.fd 2016/08/22 latex LibertinusT1Mathbb LS1 font definitions
-)
-LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 5.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 9.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 6.0pt on input line 141.
-LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 5.0pt on input line 141.
+[3 <./charts/line-charts.png> <./charts/correlational-matrix.png>]
+<charts/normalized/kmn_pca.png, id=35, 564.4287pt x 382.3083pt>
+File: charts/normalized/kmn_pca.png Graphic file (type png)
+<use charts/normalized/kmn_pca.png>
+Package pdftex.def Info: charts/normalized/kmn_pca.png  used on input line 196.
+(pdftex.def)             Requested size: 205.24384pt x 139.01926pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<charts/normalized/kmn_without_pca.png, id=36, 573.1011pt x 397.485pt>
+File: charts/normalized/kmn_without_pca.png Graphic file (type png)
+<use charts/normalized/kmn_without_pca.png>
+Package pdftex.def Info: charts/normalized/kmn_without_pca.png  used on input line 205.
+(pdftex.def)             Requested size: 205.24384pt x 142.34848pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<charts/normalized/kmn_matrix_confussion.png, id=37, 492.8814pt x 436.5108pt>
+File: charts/normalized/kmn_matrix_confussion.png Graphic file (type png)
+<use charts/normalized/kmn_matrix_confussion.png>
+Package pdftex.def Info: charts/normalized/kmn_matrix_confussion.png  used on input line 216.
+(pdftex.def)             Requested size: 205.24384pt x 181.76804pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: logo_gips_unit.png Graphic file (type png)
+<use logo_gips_unit.png>
+Package pdftex.def Info: logo_gips_unit.png  used on input line 236.
+(pdftex.def)             Requested size: 216.81pt x 21.6618pt.
+[4 <./charts/random_forest.png> <./charts/elbow_method_optimum_value.png> <./charts/normalized/kmn_pca.png> <./charts/normalized/kmn_without_pca.png>]
+File: logo_gips_unit.png Graphic file (type png)
+<use logo_gips_unit.png>
+Package pdftex.def Info: logo_gips_unit.png  used on input line 289.
+(pdftex.def)             Requested size: 216.81pt x 21.6618pt.
+ [5 <./charts/normalized/kmn_matrix_confussion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
+[]\T1/LinuxLibertineT-TLF/m/n/9 Brownlee, J. (2017). \T1/LinuxLibertineT-TLF/m/it/9 How to Pre-pa-re Da-ta For Ma-chi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
+\T1/LinuxLibertineT-TLF/m/it/9 ne Lear-ning\T1/LinuxLibertineT-TLF/m/n/9 . Re-trie-ved from Da-ta Scien-ce Cen-tral:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / machinelearningmastery . com /
+ []
+
+
+Overfull \hbox (3.19405pt too wide) in paragraph at lines 333--336
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 how-[]to-[]prepare-[]data-[]for-[]machine-[]learning/$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
+[]\T1/LinuxLibertineT-TLF/m/n/9 Brownlee, J. (2018). \T1/LinuxLibertineT-TLF/m/it/9 In-tro-duc-tion to Prin-ci-pal Com-po-nent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
+\T1/LinuxLibertineT-TLF/m/it/9 Analy-sis (PCA)\T1/LinuxLibertineT-TLF/m/n/9 . Re-trie-ved from Ma-chi-ne Lear-ning Mas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--341
+\T1/LinuxLibertineT-TLF/m/n/9 tery: $\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / machinelearningmastery . com /
+ []
+
+
+Overfull \hbox (164.97389pt too wide) in paragraph at lines 338--341
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 principal-[]components-[]analysis-[]for-[]dimensionality-[]reduction-[]in-[]python/$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 datasciencecentral . com / profiles / blogs /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+[]\T1/LinuxLibertineT-TLF/m/n/9 Barcelona Geeks. (2022). \T1/LinuxLibertineT-TLF/m/it/9 Mé-to-do del co-do pa-ra el va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+\T1/LinuxLibertineT-TLF/m/it/9 lor óp-ti-mo de k en k-means\T1/LinuxLibertineT-TLF/m/n/9 . Re-trie-ved from Bar-ce-lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+\T1/LinuxLibertineT-TLF/m/n/9 na Geeks: $\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / barcelonageeks . com /
+ []
+
+
+Overfull \hbox (68.55399pt too wide) in paragraph at lines 348--351
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 metodo-[]del-[]codo-[]para-[]el-[]valor-[]optimo-[]de-[]k-[]en-[]kmeans/$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
+[]\T1/LinuxLibertineT-TLF/m/n/9 Scikit-learn. (2022). \T1/LinuxLibertineT-TLF/m/it/9 Ad-jus-ted Rand In-dex\T1/LinuxLibertineT-TLF/m/n/9 . Re-trie-ved from
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 353--356
+\T1/LinuxLibertineT-TLF/m/n/9 Scikit-learn: $\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / scikit-[]learn . org / stable /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 auto _ examples / cluster / plot _ adjusted _ for _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
+[]\T1/LinuxLibertineT-TLF/m/n/9 Aprende Ma-chi-ne Lear-ning. (2022). \T1/LinuxLibertineT-TLF/m/it/9 k-means en Python
+ []
+
+
+Underfull \hbox (badness 5985) in paragraph at lines 358--361
+\T1/LinuxLibertineT-TLF/m/it/9 pa-so a pa-so\T1/LinuxLibertineT-TLF/m/n/9 . Re-trie-ved from Apren-de Ma-chi-ne Lear-ning:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / www . aprendemachinelearning . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+[]\T1/LinuxLibertineT-TLF/m/n/9 Datasource.ai. (2022). \T1/LinuxLibertineT-TLF/m/it/9 Com-pren-sión de la ma-triz de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+\T1/LinuxLibertineT-TLF/m/it/9 con-fu-sión y có-mo im-ple-men-tar-la en Python\T1/LinuxLibertineT-TLF/m/n/9 . Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+\T1/LinuxLibertineT-TLF/m/n/9 trie-ved from Da-ta-sour-ce.ai: $\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 datasource . ai / es / data-[]science-[]articles /
+ []
+
+
+Overfull \hbox (160.7139pt too wide) in paragraph at lines 363--366
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 comprension-[]de-[]la-[]matriz-[]de-[]confusion-[]y-[]como-[]implementarla-[]en-[]python$ 
+ []
+
+File: logo_gips_unit.png Graphic file (type png)
+<use logo_gips_unit.png>
+Package pdftex.def Info: logo_gips_unit.png  used on input line 367.
+(pdftex.def)             Requested size: 216.81pt x 21.6618pt.
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
+[]\T1/LinuxLibertineT-TLF/m/n/9 Ciencia de Da-tos. (2022). \T1/LinuxLibertineT-TLF/m/it/9 Re-gre-sión li-neal en Python\T1/LinuxLibertineT-TLF/m/n/9 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
+\T1/LinuxLibertineT-TLF/m/n/9 Re-trie-ved from Cien-cia de Da-tos: $\T1/LinuxLibertineMonoT-TLF/regular/n/9 https : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--371
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 www . cienciadedatos . net / documentos /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 com / como-[]hacer-[]un-[]histograma-[]en-[]python /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 # : ~ : text = Para % 20hacer % 20un % 20histograma %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 20en % 20Python % 20es % 20necesario ,[] librer %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--376
+\T1/LinuxLibertineMonoT-TLF/regular/n/9 C3 % ADa % 20como % 20Matplotlib % 2C % 20Seaborn %
+ []
 
 No file main.bbl.
 
 AED: lastpage setting LastPage
 File: logo_gips_unit.png Graphic file (type png)
 <use logo_gips_unit.png>
-Package pdftex.def Info: logo_gips_unit.png  used on input line 175.
+Package pdftex.def Info: logo_gips_unit.png  used on input line 396.
 (pdftex.def)             Requested size: 216.81pt x 21.6618pt.
-[3 <./charts/line-charts.png> <./charts/correlational-matrix.png>] (./main.aux
+[7
+
+] (./main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -748,20 +993,23 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 13679 strings out of 478268
- 248778 string characters out of 5846347
- 631743 words of memory out of 5000000
- 31621 multiletter control sequences out of 15000+600000
- 526303 words of font info for 78 fonts, out of 8000000 for 9000
+ 13734 strings out of 478268
+ 250509 string characters out of 5846347
+ 632743 words of memory out of 5000000
+ 31669 multiletter control sequences out of 15000+600000
+ 531770 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,15n,91p,912b,424s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,15n,91p,912b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertinust1math/libusMI.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertinust1math/libusMR.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on main.pdf (3 pages, 965380 bytes).
+Output written on main.pdf (7 pages, 1394274 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
