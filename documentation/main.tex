@@ -24,16 +24,14 @@
 \maketitle
 
 \section{Introducción}
-Los sistemas de bicicletas compartidas se han vuelto muy populares en todo el mundo debido a su capacidad para mejorar la movilidad urbana, la salud y el medio ambiente. Estos sistemas generan grandes cantidades de datos que pueden ayudarnos a comprender mejor cómo se mueven las personas en las ciudades y qué eventos importantes ocurren en ellas. En este proyecto, vamos a utilizar un conjunto de datos de un sistema de bicicletas compartidas para construir un modelo de aprendizaje supervisado que prediga la cantidad de bicicletas alquiladas en función de diferentes factores, como la hora del día, la temperatura, la humedad y las condiciones meteorológicas.
+Los \textbf{sistemas de bicicletas compartidas} se han vuelto muy populares en todo el mundo debido a su capacidad para mejorar la \textbf{movilidad urbana}, la \textbf{salud} y el \textbf{medio ambiente}. Estos sistemas generan grandes cantidades de datos que pueden ayudarnos a comprender mejor cómo se mueven las personas en las ciudades y qué eventos importantes ocurren en ellas. En este proyecto, vamos a utilizar un conjunto de datos de un sistema de bicicletas compartidas para construir un modelo de \textbf{aprendizaje supervisado} que prediga la cantidad de bicicletas alquiladas en función de diferentes factores, como la hora del día, la temperatura, la humedad y las condiciones meteorológicas.
 
-El objetivo principal de este proyecto es mostrar cómo el aprendizaje supervisado puede ser útil para predecir la demanda de bicicletas compartidas según las condiciones ambientales y temporales, lo que podría ayudar a los operadores del sistema a mejorar la disponibilidad de bicicletas y a satisfacer mejor las necesidades de los clientes. Para lograr este objetivo, vamos a seguir un enfoque de aprendizaje supervisado, utilizando un conjunto de datos etiquetados para entrenar un modelo que pueda predecir la cantidad de bicicletas alquiladas según los diferentes factores que hemos mencionado.
-
+El objetivo principal de este proyecto es mostrar cómo el \textbf{aprendizaje supervisado} puede ser útil para predecir la demanda de bicicletas compartidas según las condiciones ambientales y temporales, lo que podría ayudar a los operadores del sistema a mejorar la disponibilidad de bicicletas y a satisfacer mejor las necesidades de los clientes. Para lograr este objetivo, vamos a seguir un enfoque de aprendizaje supervisado, utilizando un conjunto de datos etiquetados para entrenar un modelo que pueda predecir la cantidad de bicicletas alquiladas según los diferentes factores que hemos mencionado.
 
 \section{Descripción del Dataset}
-El dataset utilizado en este proyecto es un conjunto de registros de préstamos de bicicletas compartidas en un sistema automatizado. Contiene información sobre más de 17,000 préstamos realizados cada hora durante un período de dos años, desde enero de 2011 hasta diciembre de 2012. Cada registro contiene detalles importantes, como la fecha y hora del préstamo, las condiciones climáticas, y la cantidad de bicicletas alquiladas por usuarios registrados y ocasionales.
+El \textbf{dataset} utilizado en este proyecto es un conjunto de registros de préstamos de \textbf{bicicletas compartidas} en un sistema automatizado. Contiene información sobre más de 17,000 préstamos realizados cada hora durante un período de dos años, desde enero de 2011 hasta diciembre de 2012. Cada registro contiene detalles importantes, como la fecha y hora del préstamo, las condiciones climáticas, y la cantidad de bicicletas alquiladas por usuarios registrados y ocasionales.
 
-El dataset consta de 15 columnas que proporcionan información útil sobre los patrones de préstamo de bicicletas. Las primeras columnas incluyen detalles sobre el día y la hora del préstamo, así como la temporada, el año, el mes, el día de la semana y si es un día laborable o festivo. También se registran la temperatura, la sensación térmica, la humedad y la velocidad del viento. Además, la columna "weathersit" indica las condiciones climáticas generales en la hora del préstamo. Finalmente, se incluyen tres columnas que registran el número de bicicletas alquiladas por usuarios ocasionales, usuarios registrados y el número total de bicicletas alquiladas.
-
+El dataset consta de 15 columnas que proporcionan información útil sobre los patrones de préstamo de bicicletas. Las primeras columnas incluyen detalles sobre el día y la hora del préstamo, así como la temporada, el año, el mes, el día de la semana y si es un día laborable o festivo. También se registran la temperatura, la sensación térmica, la humedad y la velocidad del viento. Además, la columna "\textbf{weathersit}" indica las condiciones climáticas generales en la hora del préstamo. Finalmente, se incluyen tres columnas que registran el número de bicicletas alquiladas por usuarios ocasionales, usuarios registrados y el número total de bicicletas alquiladas.
 \begin{itemize}
     \item \textbf{Instant}: Este es el índice de registro y no tiene un valor informativo por sí mismo.
     \item \textbf{Dteday}: Esta variable indica la fecha en que se realizó el préstamo. La fecha está en formato año-mes-día.
@@ -114,13 +112,11 @@ Finalmente, \textit{weathersit} (condiciones meteorológicas) y \textit{windspee
     \label{fig:correlationmatrix}
 \end{figure}
 
-Para obtener los histogramas, utilizamos la función hist de la librería matplotlib, que nos permite visualizar la distribución de cada variable. Para obtener los gráficos de líneas correlacional, utilizamos la función plot de la misma librería, pasando como parámetros las variables a graficar y la variable cnt. Finalmente, para obtener la matriz correlacional, utilizamos la función heatmap de la librería seaborn.
+Para obtener los histogramas, utilizamos la función \textbf{hist} de la librería \textbf{matplotlib}, que nos permite visualizar la distribución de cada variable. Para obtener los gráficos de líneas correlacional, utilizamos la función \textbf{plot} de la misma librería, pasando como parámetros las variables a graficar y la variable \textbf{cnt}. Finalmente, para obtener la matriz correlacional, utilizamos la función \textbf{heatmap} de la librería \textbf{seaborn}.
 
-Estos gráficos nos permiten visualizar las relaciones entre las variables y la variable cnt. Los histogramas nos muestran la distribución de cada variable, mientras que los gráficos de líneas correlacional nos permiten ver la relación entre cada variable y cnt. La matriz correlacional nos muestra la relación entre todas las variables.
+Estos gráficos nos permiten visualizar las relaciones entre las variables y la variable \textbf{cnt}. Los histogramas nos muestran la distribución de cada variable, mientras que los gráficos de líneas correlacional nos permiten ver la relación entre cada variable y \textbf{cnt}. La matriz correlacional nos muestra la relación entre todas las variables.
 
-De esta forma, podemos relacionar las conclusiones obtenidas en la última tabla con los gráficos obtenidos. Por ejemplo, la correlación positiva entre la variable atemp y cnt se refleja en el gráfico de líneas correlacional correspondiente, donde podemos ver una tendencia positiva entre ambas variables. Del mismo modo, la correlación negativa entre hum y cnt se refleja en el gráfico correspondiente, donde podemos ver una tendencia negativa entre ambas variables. Los histogramas nos muestran la distribución de cada variable y nos permiten ver si hay valores atípicos o si los datos siguen una distribución normal. La matriz correlacional nos muestra todas las correlaciones entre las variables, lo que nos permite tener una visión general de la relación entre todas las variables en conjunto.
-
-\section{Método}
+De esta forma, podemos relacionar las conclusiones obtenidas en la última tabla con los gráficos obtenidos. Por ejemplo, la correlación positiva entre la variable \textbf{atemp} y \textbf{cnt} se refleja en el gráfico de líneas correlacional correspondiente, donde podemos ver una tendencia positiva entre ambas variables. Del mismo modo, la correlación negativa entre \textbf{hum} y \textbf{cnt} se refleja en el gráfico correspondiente, donde podemos ver una tendencia negativa entre ambas variables. Los histogramas nos muestran la distribución de cada variable y nos permiten ver si hay valores atípicos o si los datos siguen una distribución normal. La matriz correlacional nos muestra todas las correlaciones entre las variables, lo que nos permite tener una visión general de la relación entre todas las variables en conjunto.\section{Método}
 
 \subsection{Aprendizaje supervisado}
 En primer lugar, dividiremos nuestros datos en un conjunto de entrenamiento y un conjunto de prueba. A continuación, aplicaremos \textbf{Random Forest}, para modelar la relación entre las variables independientes (día de la semana, hora del día, temperatura, etc.) y la variable dependiente (número de bicicletas alquiladas).
@@ -130,7 +126,7 @@ Una vez que hayamos entrenado nuestro modelo de \textbf{Random Forest}, evaluare
 Se utilizaran ténicas de clustering y reducción de dimensionalidad.
 En el caso del clustering, agruparíamos los datos en diferentes grupos o clústeres según su similitud, lo que nos permitiría identificar patrones y características comunes en los datos. Esto podría ser útil para segmentar la demanda de bicicletas y detectar posibles oportunidades de negocio.
 
-Por otro lado, la reducción de dimensionalidad nos permitiría reducir el número de variables o características en nuestros datos sin perder información importante. Esto podría ser útil si tenemos un gran número de variables y queremos simplificar nuestro modelo de regresión sin perder precisión en nuestras predicciones.
+Por otro lado, la reducción de dimensionalidad nos permitiría reducir el número de variables o características en nuestros datos sin perder información importante. Esto podría ser útil si tenemos un gran número de variables y queremos simplificar nuestro modelo sin perder precisión en nuestras predicciones.
 \subsubsection{Etiquetado de los datos y su importancia en el aprendizaje no supervisado}
 
 El etiquetado de los datos es una técnica importante en el aprendizaje no supervisado que nos permite asignar categorías o etiquetas a los datos en función de ciertos criterios. Al asignar etiquetas a los datos, podemos transformar un conjunto de datos no etiquetado en uno etiquetado que puede ser utilizado para evaluar el rendimiento de un modelo de aprendizaje no supervisado. También puede ayudar a identificar patrones y relaciones subyacentes en los datos que no serían evidentes de otra manera.
@@ -227,7 +223,7 @@ En esta sección, evaluamos el modelo de aprendizaje no supervisado utilizando d
 El coeficiente de silueta promedio es una medida de la calidad de los agrupamientos generados por un algoritmo de agrupamiento. Este coeficiente varía entre -1 y 1, donde un valor cercano a 1 indica que los grupos están bien separados y un valor cercano a -1 indica que los grupos están mal separados. En este caso, el coeficiente de silueta promedio obtenido es 0.2495.
 
 \begin{itemize}
-    \item \textbf{Valor obtenido:} 0.2495
+    \item \textbf{Valor obtenido:} 0.1674
 \end{itemize}
 
 \subsection{Inercia}
@@ -235,7 +231,7 @@ El coeficiente de silueta promedio es una medida de la calidad de los agrupamien
 La inercia es una medida de la dispersión interna de los grupos y se calcula como la suma de las distancias al cuadrado de cada punto al centroide de su grupo. Un valor de inercia más bajo indica una mejor calidad de agrupamiento. En este caso, la inercia obtenida es 1841.0286.
 
 \begin{itemize}
-    \item \textbf{Valor obtenido:} 1841.0286
+    \item \textbf{Valor obtenido:} 140848
 \end{itemize}
 
 \subsection{Índice ARI}
@@ -243,7 +239,7 @@ La inercia es una medida de la dispersión interna de los grupos y se calcula co
 El índice Adjusted Rand Index (ARI) es una medida de similitud entre dos agrupamientos, en este caso, el agrupamiento generado por el modelo y el agrupamiento real (etiquetas verdaderas). El ARI varía entre -1 y 1, donde un valor cercano a 1 indica que los dos agrupamientos son casi idénticos y un valor cercano a -1 indica que los agrupamientos son completamente diferentes. En este caso, el índice ARI obtenido es 0.2245.
 
 \begin{itemize}
-    \item \textbf{Valor obtenido:} 0.2245
+    \item \textbf{Valor obtenido:} 0.0453
 \end{itemize}
 
 \subsection{Índice AMI}
@@ -251,15 +247,15 @@ El índice Adjusted Rand Index (ARI) es una medida de similitud entre dos agrupa
 El índice Adjusted Mutual Information (AMI) es otra medida de similitud entre dos agrupamientos que tiene en cuenta la información mutua entre ellos, ajustada para tener en cuenta la posibilidad de obtener valores altos de información mutua por casualidad. El AMI varía entre 0 y 1, donde un valor cercano a 1 indica que los dos agrupamientos son casi idénticos y un valor cercano a 0 indica que no hay relación entre los agrupamientos. En este caso, el índice AMI obtenido es 0.2468.
 
 \begin{itemize}
-    \item \textbf{Valor obtenido:} 0.2468
+    \item \textbf{Valor obtenido:} 0.0437
 \end{itemize}
 
 \subsection{Matriz de confusión}
 A partir de la matriz de confusión, podemos observar lo siguiente:
 \begin{enumerate}
-    \item El modelo es bastante preciso al predecir la clase ``Bajo'', con un 71.97\% de las predicciones correctas. Sin embargo, también hay una proporción significativa de casos clasificados incorrectamente como ``Medio'' (10.49\%) y ``Alto'' (17.54\%).
-    \item En el caso de la clase ``Medio'', el modelo tiene una precisión del 49.49\%. Aproximadamente el 35.38\% de los casos en esta clase se clasificaron incorrectamente como ``Alto'' y el 15.13\% como ``Bajo''.
-    \item Para la clase ``Alto'', el modelo tiene un rendimiento más bajo, con solo el 39.04\% de las predicciones correctas. El 60.93\% de los casos se clasificaron incorrectamente como ``Medio'', mientras que apenas el 0.03\% se clasificó como ``Bajo''.
+    \item El modelo es algo preciso al predecir la clase ``Bajo'', con un 56.26\% de las predicciones correctas. Sin embargo, también hay una proporción significativa de casos clasificados incorrectamente como ``Medio'' (27.48\%) y ``Alto'' (29.60\%).
+    \item En el caso de la clase ``Medio'', el modelo tiene una precisión del 41.25\%. Aproximadamente el 32.59\% de los casos en esta clase se clasificaron incorrectamente como ``Alto'' y el 31.31\% como ``Bajo''.
+    \item Para la clase ``Alto'', el modelo tiene un rendimiento más bajo, con solo el 37.81\% de las predicciones correctas. El 31.27\% de los casos se clasificaron incorrectamente como ``Medio'', mientras que apenas el 12.43\% se clasificó como ``Bajo''.
 \end{enumerate}
 Estos resultados sugieren que el modelo de aprendizaje no supervisado tiene un rendimiento moderado en la predicción de la cantidad de bicicletas alquiladas en función de las características proporcionadas. El modelo tiene un rendimiento aceptable al predecir la clase ``Bajo'', pero su precisión es menor en las clases ``Medio'' y ``Alto''. Esto podría deberse a la dificultad de separar estas clases utilizando solo el algoritmo k-means y PCA.
 
@@ -269,7 +265,7 @@ En este estudio, se han explorado dos enfoques diferentes para predecir el núme
 
 \subsection{Aprendizaje supervisado}
 
-El modelo de aprendizaje supervisado, basado en la \textbf{regresión lineal}, ha demostrado un excelente rendimiento en la predicción del número de bicicletas prestadas en función de diversas características. El \textbf{Error Cuadrático Medio (MSE)} es extremadamente bajo ($8.209062916187086e-22$), lo que sugiere que el modelo se ajusta muy bien a los datos. Además, el \textbf{Coeficiente de Determinación (R$^2$)} es 1.0, lo que indica un ajuste perfecto del modelo a los datos.
+El modelo de aprendizaje supervisado, basado en la \textbf{regresión lineal}, ha demostrado un excelente rendimiento en la predicción del número de bicicletas prestadas en función de diversas características. El \textbf{Error Cuadrático Medio (MSE)} es ($1585.7507070555234$), lo que sugiere que el modelo se ajusta bastante bien a los datos. Además, el \textbf{Coeficiente de Determinación (R$^2$)} es 0.949921676677232, lo que indica un ajuste perfecto del modelo a los datos.
 
 Dado su alto rendimiento, el modelo de aprendizaje supervisado sería útil para predecir con precisión el número de bicicletas alquiladas en momentos específicos del día y podría ser utilizado para tomar decisiones informadas sobre la gestión de recursos, la promoción de ofertas y la planificación de mejoras en la infraestructura de bicicletas compartidas.
 
@@ -303,10 +299,15 @@ Los modelos desarrollados en este estudio se basan en datos históricos hasta \t
 
 \subsection{Conclusiones}
 
-En este estudio, se ha explorado el uso de modelos de aprendizaje supervisado y no supervisado para predecir el número de bicicletas alquiladas en función de diversas variables, como el clima, la temperatura, la velocidad del viento, la humedad y el tipo de usuario. El modelo de aprendizaje supervisado, basado en la regresión lineal, mostró un ajuste perfecto a los datos, aunque puede estar sujeto al sobreajuste. Por otro lado, el modelo de aprendizaje no supervisado, basado en el algoritmo k-means, proporcionó resultados moderados, pero con un margen de mejora.
+En este estudio, se ha explorado el uso de modelos de \textbf{aprendizaje supervisado} y \textbf{no supervisado} para predecir el número de bicicletas alquiladas en función de diversas variables, como el clima, la temperatura, la velocidad del viento, la humedad y el tipo de usuario. El modelo de aprendizaje supervisado, basado en \textbf{Random Forest}, mostró un ajuste perfecto a los datos, aunque puede estar sujeto al sobreajuste. Por otro lado, el modelo de aprendizaje no supervisado, basado en el algoritmo \textbf{k-means}, proporcionó resultados moderados, pero con un margen de mejora.
 
 Ambos enfoques han demostrado ser útiles para abordar el problema del alquiler de bicicletas. Sin embargo, se deben tener en cuenta las limitaciones identificadas en la sección de discusión crítica al aplicar estos modelos en diferentes contextos y al tomar decisiones basadas en sus resultados.
 
+El transporte público orientado al alquiler de bicicletas en ciudades ofrece numerosas ventajas, como la \textbf{reducción de la congestión del tráfico}, la \textbf{disminución de la contaminación atmosférica}, y el fomento de la \textbf{actividad física} entre los ciudadanos. La mejora de estos sistemas dentro de las ciudades a través de la aplicación de la \textbf{inteligencia artificial} puede optimizar la distribución y disponibilidad de bicicletas, aumentar la satisfacción del usuario y promover un mayor uso de este medio de transporte sostenible.
+
+La aplicación de la inteligencia artificial en el análisis de los datos generados por estos sistemas de alquiler de bicicletas puede proporcionar información valiosa para identificar patrones y tendencias en el comportamiento de los usuarios. Esto permitiría a las ciudades y a los operadores de sistemas de bicicletas compartidas tomar decisiones informadas sobre la \textbf{planificación de infraestructuras}, la \textbf{ubicación de estaciones de bicicletas} y la \textbf{gestión de la flota de bicicletas}.
+
+En resumen, la adopción de la inteligencia artificial y el análisis de datos en el ámbito del transporte público orientado al alquiler de bicicletas en ciudades tiene el potencial de mejorar significativamente la calidad de vida de los ciudadanos y promover un entorno urbano más sostenible y saludable.
 \subsection{Trabajo Futuro}
 
 Dado que siempre hay margen de mejora en la predicción y el análisis de datos, se proponen las siguientes direcciones para el trabajo futuro:
@@ -374,6 +375,20 @@ Al seguir estas direcciones, este trabajo puede contribuir aún más al entendim
     \textit{Cómo hacer un histograma en Python}.
     Retrieved from Código Piton: \url{https://www.codigopiton.com/como-hacer-un-histograma-en-python/#:~:text=Para%20hacer%20un%20histograma%20en%20Python%20es%20necesario,librer%C3%ADa%20como%20Matplotlib%2C%20Seaborn%2C%20Bokeh%2C%20Altair%20o%20Plotly.}
 
+    \bibitem{densitybasedclustering}
+    Saha, S. (2021).
+    \textit{Density-Based Clustering: DBSCAN vs HDBSCAN}.
+    Retrieved from Towards Data Science: \url{https://towardsdatascience.com/density-based-clustering-dbscan-vs-hdbscan-39e02af990c7}
+
+    \bibitem{machinelearningtraders}
+    X-Trader.net. (2019).
+    \textit{Machine Learning para Traders III}.
+    Retrieved from X-Trader.net: \url{https://www.x-trader.net/machine-learning-para-traders-iii/#:~:text=La%20regresi%C3%B3n%20Lasso%20suele%20funcionar%20mejor%20en%20entornos,factores%20predictivos,%20todos%20con%20par%C3%A1metros%20de%20tama%C3%B1o%20similar.}
+
+    \bibitem{randomforestregression}
+    GeeksforGeeks. (2020).
+    \textit{Random Forest Regression in Python}.
+    Retrieved from GeeksforGeeks: \url{https://www.geeksforgeeks.org/random-forest-regression-in-python/}
 \end{thebibliography}
 
 
