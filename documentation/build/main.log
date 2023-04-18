@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  17 APR 2023 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.5)  18 APR 2023 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1004,7 +1004,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  87i,16n,91p,915b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertinust1math/libusMI.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertinust1math/libusMR.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dhi6qf.enc}{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>{C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.enc} <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\alejo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineMT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/alejo/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb>
-Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (6 pages, 1289851 bytes).
+Output written on c:\Users\alejo\Documents\GitHub\bike-sharing-predictor-system\documentation\build\main.pdf (6 pages, 1289849 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
